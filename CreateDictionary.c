@@ -6,14 +6,14 @@ void f1f0pl3()
 	int n0,n1,n2,n3,n4,n5;
 	char str[4];
 	str[3]=10; //换行
-	
-	FILE *fp=fopen("1-0pl3.txt","w");  
-    if(fp==NULL)  
-    {  
+
+	FILE *fp=fopen("1-0pl3.txt","w");
+    if(fp==NULL)
+    {
         return;
-    } 
-	
-	
+    }
+
+
 	for(n0=48;n0<58;n0++)
 	{
 		str[0]=n0;
@@ -25,25 +25,25 @@ void f1f0pl3()
 				str[2]=n2;
 				fprintf(fp,"%s", str);
 			}
-			
+
 		//}
 	}
-	fclose(fp);	
-	return;				
+	fclose(fp);
+	return;
 }
 void f1f0pl4()
 {
 	int n0,n1,n2,n3,n4,n5;
 	char str[5];
 	str[4]=10; //换行
-	
-	FILE *fp=fopen("1-0pl4.txt","w");  
-    if(fp==NULL)  
-    {  
-        return;  
-    } 
-	
-	
+
+	FILE *fp=fopen("1-0pl4.txt","w");
+    if(fp==NULL)
+    {
+        return;
+    }
+
+
 	for(n0=48;n0<58;n0++)
 	{
 		str[0]=n0;
@@ -59,7 +59,7 @@ void f1f0pl4()
 					fprintf(fp,"%s", str);
 				}
 			}
-			
+
 		//}
 	}
 	for(n0=48;n0<58;n0++)
@@ -77,25 +77,25 @@ void f1f0pl4()
 					fprintf(fp,"%s", str);
 				}
 			//}
-			
+
 		}
 	}
-	fclose(fp);	
-	return;				
+	fclose(fp);
+	return;
 }
 void f2f6pl3()
 {
 	int n0,n1,n2,n3,n4,n5;
 	char str[4];
 	str[3]=10; //换行
-	
-	FILE *fp=fopen("2-6pl3.txt","w");  
-    if(fp==NULL)  
-    {  
-        return;  
-    } 
-	
-	
+
+	FILE *fp=fopen("2-6pl3.txt","w");
+    if(fp==NULL)
+    {
+        return;
+    }
+
+
 	for(n0=97;n0<123;n0++)
 	{
 		str[0]=n0;
@@ -107,25 +107,25 @@ void f2f6pl3()
 				str[2]=n2;
 				fprintf(fp,"%s", str);
 			}
-			
+
 		//}
 	}
-	fclose(fp);	
-	return;				
+	fclose(fp);
+	return;
 }
 void f2f6pl4()
 {
 	int n0,n1,n2,n3,n4,n5;
 	char str[5];
 	str[4]=10; //换行
-	
-	FILE *fp=fopen("2-6pl4.txt","w");  
-    if(fp==NULL)  
-    {  
-        return;  
-    } 
-	
-	
+
+	FILE *fp=fopen("2-6pl4.txt","w");
+    if(fp==NULL)
+    {
+        return;
+    }
+
+
 	for(n0=97;n0<123;n0++)
 	{
 		str[0]=n0;
@@ -141,7 +141,7 @@ void f2f6pl4()
 					fprintf(fp,"%s", str);
 				}
 			}
-			
+
 		//}
 	}
 	for(n0=97;n0<123;n0++)
@@ -159,24 +159,24 @@ void f2f6pl4()
 					fprintf(fp,"%s", str);
 				}
 			//}
-			
+
 		}
 	}
-	fclose(fp);	
-	return;				
+	fclose(fp);
+	return;
 }
 void f3f6pl3()
 {
 	int n0,n1,n2,n3,n4,n5;
 	char str[4];
 	str[3]=10; //换行
-	
-	FILE *fp=fopen("3-6pl3.txt","w");  
-    if(fp==NULL)  
-    {  
-        return;  
-    } 
-	
+
+	FILE *fp=fopen("3-6pl3.txt","w");
+    if(fp==NULL)
+    {
+        return;
+    }
+
 	for(n0=97;n0<123;n0++)
 	{
 		str[0]=n0;
@@ -186,7 +186,7 @@ void f3f6pl3()
 				str[2]=n2;
 				fprintf(fp,"%s", str);
 			}
-			
+
 	}
 	for(n0=97;n0<123;n0++)
 	{
@@ -197,7 +197,7 @@ void f3f6pl3()
 				str[2]=n2;
 				fprintf(fp,"%s", str);
 			}
-			
+
 	}
 	for(n0=48;n0<58;n0++)
 	{
@@ -208,7 +208,7 @@ void f3f6pl3()
 				str[2]=n2;
 				fprintf(fp,"%s", str);
 			}
-			
+
 	}
 	for(n0=48;n0<58;n0++)
 	{
@@ -241,22 +241,22 @@ void f3f6pl3()
 				fprintf(fp,"%s", str);
 			}
 	}
-	fclose(fp);	
-	return;				
+	fclose(fp);
+	return;
 }
 void f3f6pl4()
 {
 	int n0,n1,n2,n3,n4,n5;
 	char str[5];
 	str[4]=10; //换行
-	
-	FILE *fp=fopen("3-6pl4.txt","w");  
-    if(fp==NULL)  
-    {  
-        return;  
-    } 
-	
-	
+
+	FILE *fp=fopen("3-6pl4.txt","w");
+    if(fp==NULL)
+    {
+        return;
+    }
+
+
 	for(n0=97;n0<123;n0++)
 	{
 		str[0]=n0;
@@ -354,7 +354,7 @@ void f3f6pl4()
 					str[3]=n3;
 					fprintf(fp,"%s", str);
 				}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -369,7 +369,7 @@ void f3f6pl4()
 					str[3]=n3;
 					fprintf(fp,"%s", str);
 				}
-			
+
 		}
 	}
 	for(n0=48;n0<58;n0++)
@@ -384,7 +384,7 @@ void f3f6pl4()
 					str[3]=n3;
 					fprintf(fp,"%s", str);
 				}
-			
+
 		}
 	}
 	for(n0=48;n0<58;n0++)
@@ -399,7 +399,7 @@ void f3f6pl4()
 					str[3]=n3;
 					fprintf(fp,"%s", str);
 				}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -414,7 +414,7 @@ void f3f6pl4()
 					str[3]=n3;
 					fprintf(fp,"%s", str);
 				}
-			
+
 		}
 	}
 	for(n0=48;n0<58;n0++)
@@ -429,7 +429,7 @@ void f3f6pl4()
 					str[3]=n3;
 					fprintf(fp,"%s", str);
 				}
-			
+
 		}
 	}
 	for(n0=48;n0<58;n0++)
@@ -444,46 +444,46 @@ void f3f6pl4()
 					str[3]=n3;
 					fprintf(fp,"%s", str);
 				}
-			
+
 		}
 	}
-	fclose(fp);	
-	return;				
+	fclose(fp);
+	return;
 }
 void f10pl1()
 {
 	int n0,n1,n2,n3,n4,n5;
 	char str[2];
 	str[1]=10; //换行
-	
-	FILE *fp=fopen("10pl1.txt","w");  
-    if(fp==NULL)  
-    {  
-        return;  
-    } 
-	
-	
+
+	FILE *fp=fopen("10pl1.txt","w");
+    if(fp==NULL)
+    {
+        return;
+    }
+
+
 	for(n0=48;n0<58;n0++)
 	{
 		str[0]=n0;
 		fprintf(fp,"%s", str);
 	}
-	fclose(fp);	
-	return;				
-}	
+	fclose(fp);
+	return;
+}
 void f10pl2()
 {
 	int n0,n1,n2,n3,n4,n5;
 	char str[3];
 	str[2]=10; //换行
-	
-	FILE *fp=fopen("10pl2.txt","w");  
-    if(fp==NULL)  
-    {  
-        return;  
-    } 
-	
-	
+
+	FILE *fp=fopen("10pl2.txt","w");
+    if(fp==NULL)
+    {
+        return;
+    }
+
+
 	for(n0=48;n0<58;n0++)
 	{
 		str[0]=n0;
@@ -491,25 +491,25 @@ void f10pl2()
 		{
 			str[1]=n1;
 			fprintf(fp,"%s", str);
-			
+
 		}
 	}
-	fclose(fp);	
-	return;				
+	fclose(fp);
+	return;
 }
 void f10pl3()
 {
 	int n0,n1,n2,n3,n4,n5;
 	char str[4];
 	str[3]=10; //换行
-	
-	FILE *fp=fopen("10pl3.txt","w");  
-    if(fp==NULL)  
-    {  
-        return;  
-    } 
-	
-	
+
+	FILE *fp=fopen("10pl3.txt","w");
+    if(fp==NULL)
+    {
+        return;
+    }
+
+
 	for(n0=48;n0<58;n0++)
 	{
 		str[0]=n0;
@@ -521,25 +521,25 @@ void f10pl3()
 				str[2]=n2;
 				fprintf(fp,"%s", str);
 			}
-			
+
 		}
 	}
-	fclose(fp);	
-	return;				
+	fclose(fp);
+	return;
 }
 void f10pl4()
 {
 	int n0,n1,n2,n3,n4,n5;
 	char str[5];
 	str[4]=10; //换行
-	
-	FILE *fp=fopen("10pl4.txt","w");  
-    if(fp==NULL)  
-    {  
-        return;  
-    } 
-	
-	
+
+	FILE *fp=fopen("10pl4.txt","w");
+    if(fp==NULL)
+    {
+        return;
+    }
+
+
 	for(n0=48;n0<58;n0++)
 	{
 		str[0]=n0;
@@ -555,25 +555,25 @@ void f10pl4()
 					fprintf(fp,"%s", str);
 				}
 			}
-			
+
 		}
 	}
-	fclose(fp);	
-	return;				
+	fclose(fp);
+	return;
 }
-void f10pl5()
+void f10pl6()
 {
-	int n0,n1,n2,n3,n4,n5;
-	char str[6];
-	str[5]=10; //换行
-	
-	FILE *fp=fopen("10pl5.txt","w");  
-    if(fp==NULL)  
-    {  
-        return;  
-    } 
-	
-	
+	int n0,n1,n2,n3,n4,n5,n6;
+	char str[7];
+	str[6]=10; //换行
+
+	FILE *fp=fopen("10pl6.txt","w");
+    if(fp==NULL)
+    {
+        return;
+    }
+
+
 	for(n0=48;n0<58;n0++)
 	{
 		str[0]=n0;
@@ -589,50 +589,54 @@ void f10pl5()
 					for(n4=48;n4<58;n4++)
 					{
 						str[4]=n4;
-						fprintf(fp,"%s", str);
+                        for(n5=48;n5<58;n5++)
+					    {
+						    str[5]=n5;
+						    fprintf(fp,"%s", str);
+					    }
 					}
 				}
 			}
-			
+
 		}
 	}
-	fclose(fp);	
-	return;				
+	fclose(fp);
+	return;
 }
 void f26pl1()
 {
 	int n0,n1,n2,n3,n4,n5;
 	char str[2];
 	str[1]=10; //换行
-	
-	FILE *fp=fopen("26pl1.txt","w");  
-    if(fp==NULL)  
-    {  
-        return;  
-    } 
-	
-	
+
+	FILE *fp=fopen("26pl1.txt","w");
+    if(fp==NULL)
+    {
+        return;
+    }
+
+
 	for(n0=97;n0<123;n0++)
 	{
 		str[0]=n0;
 		fprintf(fp,"%s", str);
 	}
-	fclose(fp);	
-	return;				
-}	
+	fclose(fp);
+	return;
+}
 void f26pl2()
 {
 	int n0,n1,n2,n3,n4,n5;
 	char str[3];
 	str[2]=10; //换行
-	
-	FILE *fp=fopen("26pl2.txt","w");  
-    if(fp==NULL)  
-    {  
-        return;  
-    } 
-	
-	
+
+	FILE *fp=fopen("26pl2.txt","w");
+    if(fp==NULL)
+    {
+        return;
+    }
+
+
 	for(n0=97;n0<123;n0++)
 	{
 		str[0]=n0;
@@ -640,25 +644,25 @@ void f26pl2()
 		{
 			str[1]=n1;
 			fprintf(fp,"%s", str);
-			
+
 		}
 	}
-	fclose(fp);	
-	return;				
+	fclose(fp);
+	return;
 }
 void f26pl3()
 {
 	int n0,n1,n2,n3,n4,n5;
 	char str[4];
 	str[3]=10; //换行
-	
-	FILE *fp=fopen("26pl3.txt","w");  
-    if(fp==NULL)  
-    {  
-        return;  
-    } 
-	
-	
+
+	FILE *fp=fopen("26pl3.txt","w");
+    if(fp==NULL)
+    {
+        return;
+    }
+
+
 	for(n0=97;n0<123;n0++)
 	{
 		str[0]=n0;
@@ -670,25 +674,25 @@ void f26pl3()
 				str[2]=n2;
 				fprintf(fp,"%s", str);
 			}
-			
+
 		}
 	}
-	fclose(fp);	
-	return;				
-}	
+	fclose(fp);
+	return;
+}
 void f26pl4()
 {
 	int n0,n1,n2,n3,n4,n5;
 	char str[5];
 	str[4]=10; //换行
-	
-	FILE *fp=fopen("26pl4.txt","w");  
-    if(fp==NULL)  
-    {  
-        return;  
-    } 
-	
-	
+
+	FILE *fp=fopen("26pl4.txt","w");
+    if(fp==NULL)
+    {
+        return;
+    }
+
+
 	for(n0=97;n0<123;n0++)
 	{
 		str[0]=n0;
@@ -704,25 +708,25 @@ void f26pl4()
 					fprintf(fp,"%s", str);
 				}
 			}
-			
+
 		}
 	}
-	fclose(fp);	
-	return;				
+	fclose(fp);
+	return;
 }
 void f26pl5()
 {
 	int n0,n1,n2,n3,n4,n5;
 	char str[6];
 	str[5]=10; //换行
-	
-	FILE *fp=fopen("26pl5.txt","w");  
-    if(fp==NULL)  
-    {  
-        return;  
-    } 
-	
-	
+
+	FILE *fp=fopen("26pl5.txt","w");
+    if(fp==NULL)
+    {
+        return;
+    }
+
+
 	for(n0=97;n0<123;n0++)
 	{
 		str[0]=n0;
@@ -742,25 +746,25 @@ void f26pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
-	fclose(fp);	
-	return;				
+	fclose(fp);
+	return;
 }
 void f36pl2()
 {
 	int n0,n1,n2,n3,n4,n5;
 	char str[3];
 	str[2]=10; //换行
-	
-	FILE *fp=fopen("36pl2.txt","a");  
-    if(fp==NULL)  
-    {  
-        return;  
-    } 
-	
-	
+
+	FILE *fp=fopen("36pl2.txt","a");
+    if(fp==NULL)
+    {
+        return;
+    }
+
+
 	for(n0=97;n0<123;n0++)
 	{
 		str[0]=n0;
@@ -768,10 +772,10 @@ void f36pl2()
 		{
 			str[1]=n1;
 			fprintf(fp,"%s", str);
-			
+
 		}
 	}
-	
+
 	for(n0=48;n0<58;n0++)
 	{
 		str[0]=n0;
@@ -779,25 +783,25 @@ void f36pl2()
 		{
 			str[1]=n1;
 			fprintf(fp,"%s", str);
-			
+
 		}
 	}
-	
-	fclose(fp);	
-	return;				
+
+	fclose(fp);
+	return;
 }
 void f36pl3()
 {
 	int n0,n1,n2,n3,n4,n5;
 	char str[4];
 	str[3]=10; //换行
-	
-	FILE *fp=fopen("36pl3.txt","w");  
-    if(fp==NULL)  
-    {  
-        return;  
-    } 
-	
+
+	FILE *fp=fopen("36pl3.txt","w");
+    if(fp==NULL)
+    {
+        return;
+    }
+
 	for(n0=97;n0<123;n0++)
 	{
 		str[0]=n0;
@@ -809,7 +813,7 @@ void f36pl3()
 				str[2]=n2;
 				fprintf(fp,"%s", str);
 			}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -823,7 +827,7 @@ void f36pl3()
 				str[2]=n2;
 				fprintf(fp,"%s", str);
 			}
-			
+
 		}
 	}
 	for(n0=48;n0<58;n0++)
@@ -837,7 +841,7 @@ void f36pl3()
 				str[2]=n2;
 				fprintf(fp,"%s", str);
 			}
-			
+
 		}
 	}
 	for(n0=48;n0<58;n0++)
@@ -851,7 +855,7 @@ void f36pl3()
 				str[2]=n2;
 				fprintf(fp,"%s", str);
 			}
-			
+
 		}
 	}
 	for(n0=48;n0<58;n0++)
@@ -865,7 +869,7 @@ void f36pl3()
 				str[2]=n2;
 				fprintf(fp,"%s", str);
 			}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -879,25 +883,25 @@ void f36pl3()
 				str[2]=n2;
 				fprintf(fp,"%s", str);
 			}
-			
+
 		}
 	}
-	fclose(fp);	
-	return;				
+	fclose(fp);
+	return;
 }
 void f36pl4()
 {
 	int n0,n1,n2,n3,n4,n5;
 	char str[5];
 	str[4]=10; //换行
-	
-	FILE *fp=fopen("36pl4.txt","w");  
-    if(fp==NULL)  
-    {  
-        return;  
-    } 
-	
-	
+
+	FILE *fp=fopen("36pl4.txt","w");
+    if(fp==NULL)
+    {
+        return;
+    }
+
+
 	for(n0=97;n0<123;n0++)
 	{
 		str[0]=n0;
@@ -913,7 +917,7 @@ void f36pl4()
 					fprintf(fp,"%s", str);
 				}
 			}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -931,7 +935,7 @@ void f36pl4()
 					fprintf(fp,"%s", str);
 				}
 			}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -949,7 +953,7 @@ void f36pl4()
 					fprintf(fp,"%s", str);
 				}
 			}
-			
+
 		}
 	}
 	for(n0=48;n0<58;n0++)
@@ -967,7 +971,7 @@ void f36pl4()
 					fprintf(fp,"%s", str);
 				}
 			}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -985,7 +989,7 @@ void f36pl4()
 					fprintf(fp,"%s", str);
 				}
 			}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -1003,7 +1007,7 @@ void f36pl4()
 					fprintf(fp,"%s", str);
 				}
 			}
-			
+
 		}
 	}
 	for(n0=48;n0<58;n0++)
@@ -1021,7 +1025,7 @@ void f36pl4()
 					fprintf(fp,"%s", str);
 				}
 			}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -1039,7 +1043,7 @@ void f36pl4()
 					fprintf(fp,"%s", str);
 				}
 			}
-			
+
 		}
 	}
 	for(n0=48;n0<58;n0++)
@@ -1057,7 +1061,7 @@ void f36pl4()
 					fprintf(fp,"%s", str);
 				}
 			}
-			
+
 		}
 	}
 	for(n0=48;n0<58;n0++)
@@ -1075,7 +1079,7 @@ void f36pl4()
 					fprintf(fp,"%s", str);
 				}
 			}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -1093,7 +1097,7 @@ void f36pl4()
 					fprintf(fp,"%s", str);
 				}
 			}
-			
+
 		}
 	}
 	for(n0=48;n0<58;n0++)
@@ -1111,7 +1115,7 @@ void f36pl4()
 					fprintf(fp,"%s", str);
 				}
 			}
-			
+
 		}
 	}
 	for(n0=48;n0<58;n0++)
@@ -1129,25 +1133,25 @@ void f36pl4()
 					fprintf(fp,"%s", str);
 				}
 			}
-			
+
 		}
 	}
-	fclose(fp);	
-	return;				
+	fclose(fp);
+	return;
 }
 void f36pl5()
 {
 	int n0,n1,n2,n3,n4,n5;
 	char str[6];
 	str[5]=10; //换行
-	
-	FILE *fp=fopen("36pl5.txt","w");  
-    if(fp==NULL)  
-    {  
-        return;  
-    } 
-	
-	
+
+	FILE *fp=fopen("36pl5.txt","w");
+    if(fp==NULL)
+    {
+        return;
+    }
+
+
 	for(n0=97;n0<123;n0++)
 	{
 		str[0]=n0;
@@ -1167,7 +1171,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -1189,7 +1193,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -1211,7 +1215,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -1233,7 +1237,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -1255,7 +1259,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -1277,7 +1281,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -1299,7 +1303,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=48;n0<123;n0++)
@@ -1321,7 +1325,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -1343,7 +1347,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -1365,7 +1369,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=48;n0<123;n0++)
@@ -1387,7 +1391,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -1409,7 +1413,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=48;n0<123;n0++)
@@ -1431,7 +1435,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -1453,7 +1457,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -1475,7 +1479,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=48;n0<123;n0++)
@@ -1497,7 +1501,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -1519,7 +1523,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=48;n0<123;n0++)
@@ -1541,7 +1545,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=48;n0<123;n0++)
@@ -1563,7 +1567,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=97;n0<123;n0++)
@@ -1585,7 +1589,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=48;n0<123;n0++)
@@ -1607,7 +1611,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=48;n0<123;n0++)
@@ -1629,7 +1633,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=48;n0<123;n0++)
@@ -1651,7 +1655,7 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
 	for(n0=48;n0<123;n0++)
@@ -1673,20 +1677,20 @@ void f36pl5()
 					}
 				}
 			}
-			
+
 		}
 	}
-	fclose(fp);	
-	return;				
+	fclose(fp);
+	return;
 }
 
 
 int main(){
-	printf("1.10个数字全排带(-)符号3位;\n2.10个数字全排带(-)符号4位;\n3.26个字母全排带-符号3位;\n4.26个字母全排带-符号4位;\n5.26个字母+10个数字全排带-符号3位;\n6.26个字母+10个数字全排带-符号4位;\n7.10个数字全排1位;\n8.10个数字全排2位;\n9.10个数字全排3位;\n10.10个数字全排4位;\n11.10个数字全排5位;\n12.26个字母全排1位;\n13.26个字母全排2位;\n14.26个字母全排3位;\n15.26个字母全排4位;\n16.26个字母全排5位;\n17.26个字母+10个数字全排1位;\n18.26个字母+10个数字全排1位;\n19.26个字母+10个数字全排1位;\n20.26个字母+10个数字全排5位;\n\n请输入您选择相应的序号：");
-	
+	printf("1.10个数字全排带(-)符号3位;\n2.10个数字全排带(-)符号4位;\n3.26个字母全排带-符号3位;\n4.26个字母全排带-符号4位;\n5.26个字母+10个数字全排带-符号3位;\n6.26个字母+10个数字全排带-符号4位;\n7.10个数字全排1位;\n8.10个数字全排2位;\n9.10个数字全排3位;\n10.10个数字全排4位;\n11.10个数字全排6位;\n12.26个字母全排1位;\n13.26个字母全排2位;\n14.26个字母全排3位;\n15.26个字母全排4位;\n16.26个字母全排5位;\n17.26个字母+10个数字全排1位;\n18.26个字母+10个数字全排1位;\n19.26个字母+10个数字全排1位;\n20.26个字母+10个数字全排5位;\n\n请输入您选择相应的序号：");
+
 	int op=0;
 	scanf("%d",&op);
-	
+
 	switch(op){
 		case 1 :
 			f1f0pl3();
@@ -1729,8 +1733,8 @@ int main(){
 			printf("字典已保存到当前目录下的“10pl4.txt”文件中");
 			break;
 		case 11 :
-			f10pl5();
-			printf("字典已保存到当前目录下的“10pl5.txt”文件中");
+			f10pl6();
+			printf("字典已保存到当前目录下的“10pl6.txt”文件中");
 			break;
 		case 12 :
 			f26pl1();
@@ -1771,7 +1775,7 @@ int main(){
 		default:
 			printf("无效的输入！");
 	}
-	
+
 	printf("\n 程序已结束，感谢您的使用！\n");
 	return 0;
 }
