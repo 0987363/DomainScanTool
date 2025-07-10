@@ -22,7 +22,7 @@ def clear():
         os.system('cls')
     elif sysy == "Linux":
         os.system('clear')
-        
+
 
 # 读取域名后缀列表
 def get_top_level_domain_name_suffix():
@@ -50,32 +50,33 @@ def whois_query(domain_name, domain_name_server, domain_name_whois_server):
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             s.connect((domain_name_whois_server, 43))
             # 主动初始化TCP服务器连接，。一般address的格式为元组（hostname,port），如果连接出错，返回socket.error错误。
-            
+
             s.send(f'{domain} \r\n'.encode())
             # 发送TCP数据，将string中的数据发送到连接的套接字。返回值是要发送的字节数量，该数量可能小于string的字节大小。
             # encode() 方法以 encoding 指定的编码格式编码字符串。errors参数可以指定不同的错误处理方案。
-            
-            while True:   
-                res = s.recv(1024)  
+
+            while True:
+                res = s.recv(1024)
                 # 接收TCP数据，数据以字符串形式返回，1024指定要接收的最大数据量。
-                if not len(res):  
-                    break    
+                if not len(res):
+                    break
                 infomation += str(res)
             s.close()
-            
+
             retry -= 1
             time.sleep(sleep_time)
         except:
             pass
     return infomation
-    
+
 
 
 # 输出结果写入文件
 def get_reginfomation(domain_name, domain_name_suffix_infomation):
     infomation = whois_query(domain_name, domain_name_suffix_infomation[0], domain_name_suffix_infomation[1])
     # 调用“whois_query” 获得返回
-    
+
+    #print(f'{domain_name}.{domain_name_suffix_infomation[0]} response {infomation}')
     reg = domain_name_suffix_infomation[2]
 #判断有没有返回信息
     if not infomation:
@@ -100,30 +101,30 @@ def specify_suffix_and_dictionary():
     domain_name_suffix = input("输入域名后缀(如:com,cn)____:")
     domain_dictionary = input("输入字典名(如:demo.txt)____:")
     domain_name_length = int(input("输入过滤长度(如:7)____:"))
-    
+
     domain_name_list = []
     with open(domain_dictionary,'r') as f:
        for line in f:
             if line:
                 if (len(line) < domain_name_length):
                     domain_name_list.append(line.strip())
-   
+
     top_level_domain_name_suffix_list = get_top_level_domain_name_suffix()[1:]
     top_level_domain_name_suffix_array = [x.split('=')[0] for x in top_level_domain_name_suffix_list]
 
     if domain_name_suffix not in top_level_domain_name_suffix_array:
         print(f'域名后缀 {domain_name_suffix} 不在top_level_domain_name_suffix中')
-        
+
     top_level_domain_name_suffix_index = top_level_domain_name_suffix_array.index(domain_name_suffix)
     top_level_domain_name_par_list = [x.split('=')[:-1] for x in top_level_domain_name_suffix_list]
-    
+
     for domain_name in domain_name_list:
         while threading.active_count() > max_thread:
             pass
         t = threading.Thread(target=get_reginfomation, args=(domain_name,top_level_domain_name_par_list[top_level_domain_name_suffix_index],))
         t.start()
         time.sleep(sleep_time)
-    
+
 #指定”域名“检测”所有后缀“能否注册
 def specify_the_domain_name():
     domain_name = input("输入想要的域名(如google.com只输入google)____:")
@@ -148,7 +149,7 @@ def specify_the_domain_name():
 def specify_a_dictionary():
     domain_dictionary = input("输入字典名(如:demo.txt)____:")
     domain_name_length = int(input("输入过滤长度(如:7)____:"))
-    
+
     domain_dictionary_list = []
     with open(domain_dictionary,'r') as f:
        for line in f:
@@ -168,9 +169,9 @@ def specify_a_dictionary():
                 pass
             t = threading.Thread(target=get_reginfomation, args=(domain_name,domain_name_suffix,))
             t.start()
-            time.sleep(sleep_time)    
-    
-# 退出函数  
+            time.sleep(sleep_time)
+
+# 退出函数
 def exit():
     print("程序已退出，感谢您的使用！")
 
@@ -182,15 +183,15 @@ def welcome():
             + '1.指定”域名“检测”所有后缀“能否注册\n'
             + '2.指定”字典“检测”所有后缀“能否注册\n'
             + '3.指定“后缀”和“字典”检测能否注册\n'
-            
+
             + '---------------------结束程序请输序号：0' + '\n'
             + '---------------------请输入你选择的序号：' , end=""
         )
-        
+
     select = input()
     return select
 
-    
+
 
 # 主函数
 if __name__ == '__main__':
@@ -209,10 +210,10 @@ if __name__ == '__main__':
     elif select == "3":
     # else if 否则，如果选项为1则执行以下【if后面的括号可有可无】
         clear()
-        specify_suffix_and_dictionary()   
+        specify_suffix_and_dictionary()
     else:
     #如果到最后都不符合，则执行以下【print中可以使用单/双/三 引号】
         clear()
         print("\n输入错误 程序结束，仍需使用请重新运行。\n ")
         exit()
-    
+
